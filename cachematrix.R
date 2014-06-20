@@ -53,7 +53,7 @@ if(!is.null(inv)
   
     message("updating cached matrix inverse")
     datamatrix <- x$get()
-    inv <- solve(datamatrix, ...)## %*% datamatrix
+    inv <- solve(datamatrix, ...)
     x$setinv(inv)
   
   inv
